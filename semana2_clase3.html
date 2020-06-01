@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nro 1 
+    <input type="text" id="nro1" onchange="alert1()" />  <br/>
+    <small id="mensaje" style="color: red;"></small> <br/>
+    Nro 2 
+    <input type="text" id="nro2" />  <br/>
+    <button onclick=" ejecutar() "> Calcular</button>
+    <p id="resultado"></p>
+</body>
+<script> 
+
+    function multiplicacion(a,b){
+        var resultado = a * b;
+        console.log ("El resultado es:" + resultado);
+        return resultado;
+     };
+          
+    function ejecutar(){
+        var nro1 = document.getElementById("nro1").value;
+        var nro2 = document.getElementById("nro2").value;
+
+        var accion = multiplicacion(nro1,nro2);
+        document.getElementById("resultado").innerHTML = accion;
+    };
+
+    function alert1(){
+      
+           document.getElementById("mensaje").innerHTML = "Ha cambiado";
+    };
+
+  
+
+   
+</script>
+</html>
