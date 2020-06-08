@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio03</title>
+</head>
+<body>
+    Ingrese el numero a verificar
+    <input type="text" id="nro1"></input> </br>
+    <button onclick="verificar()">Calcular</button>
+    <p id="resultado"></p>
+    <script>
+        function verificar(){
+            var nro1 = document.getElementById("nro1").value;
+            var f;
+                    if (nro1 >= 20 && nro1 <= 100 || nro1 == 400){
+                        document.getElementById("resultado").innerHTML = "El numero " + nro1 + " esta entre 20 y 100 o es 400"   
+                    }
+                    else{
+                        document.getElementById("resultado").innerHTML = "El numero " + nro1 + " no esta entre 20 y 100 o no es 400"  
+                    }        
+        }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio15</title>
+</head>
+<body>
+    Ingrese la temperatura en Celcius
+    <input type="text" id="c"></input> </br>
+    <button onclick="conversion()">Calcular</button>
+    <p id="resultado"></p>
+    <script>
+        function conversion(){
+            var c = document.getElementById("c").value;
+            var f;
+                    /*Es la misma formula de la pregunta pero despejando F y la formula es esa*/
+                    parseFloat( f = ((9*c)/5)+32);
+                    document.getElementById("resultado").innerHTML = c + " C°  es igual a : " + f + " F°"            
+        }
+    </script>
+</body>
+</html> 

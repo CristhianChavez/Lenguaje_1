@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio07</title>
+</head>
+<body>
+    <input type="number" id="nro1" placeholder="El primer numero es"></input> </br>
+    <input type="number" id="nro2" placeholder="El segundo numero es"></input> </br>
+    <input type="number" id="nro3" placeholder="El tercer numero es"></input> </br>
+    <button onclick=" mayorque() ">Calcular</button>
+    <p id = "resultado"></p>
+
+    <script>
+        function mayorque(){
+            var nro1 = parseInt( document.getElementById("nro1").value);
+            var nro2 = parseInt(document.getElementById("nro2").value);
+            var nro3 = parseInt(document.getElementById("nro3").value);
+
+            if(nro1 > nro2 && nro1 > nro3){
+                document.getElementById("resultado").innerHTML= "El numero " + nro1  + " es el mayor de todos ";
+            }
+            else if (nro2 > nro1 && nro2 > nro3){
+                document.getElementById("resultado").innerHTML= "El numero " + nro2  + " es el mayor de todos ";
+            }
+            else if (nro3 > nro1 && nro3 > nro2){
+                document.getElementById("resultado").innerHTML= "El numero " + nro3  + " es el mayor de todos ";
+            }        
+        }
+    </script>
+</body>
+</html>
